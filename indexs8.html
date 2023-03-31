@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            
+            position: relative;
+            text-align: center;
+            
+            color: #d220ff;
+            font-size: 4em;
+            z-index: 100;
+            text-shadow: -2px 0 rgb(206, 47, 206) ,0 2px rgb(66, 184, 66),2px 0 rgb(255, 223, 41),0 -2px rgb(69, 243, 243);
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+           display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(50, 50, 224);
+            overflow: hidden;
+        }
+        .flower-1{
+            background-image: url('flower1.png');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: -150px;
+        }
+        .flower-2{
+            background-image: url('flower2.png');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: -150px;
+        }
+        .flower-3{
+            background-image: url('flower3.png');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: -150px;
+        }
+        @keyframes falling{
+            to{
+                top: 100vh;
+                transform: rotate(720deg);
+            }
+        }
+        div:nth-of-type(1){
+            left: 11vw;
+            width: 150px;
+            height: 150px;
+            animation: falling 12s 2.72s ease-in infinite;
+        }
+        div:nth-of-type(2){
+            left: 15vw;
+            width: 150px;
+            height: 150px;
+            animation: falling 12s 2.32s ease-in infinite;
+        }
+        div:nth-of-type(3){
+            right: 15vw;
+            width: 150px;
+            height: 150px;
+            animation: falling 12s 2.32s ease-in infinite;
+        }
+        div:nth-of-type(4){
+            left: 59vw;
+            width: 150px;
+            height: 150px;
+            animation: falling 12s 2.72s ease-in infinite;
+        }
+        div:nth-of-type(5){
+            left: 15vw;
+            width: 95px;
+            height: 95px;
+            animation: falling 12s 2.32s ease-in infinite;
+        }
+        div:nth-of-type(6){
+            right: 33vw;
+            width: 150px;
+            height: 150px;
+            animation: falling 12s 1s ease-in infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="flower-1"></div>
+    <div class="flower-2"></div>
+    <div class="flower-3"></div>
+    <div class="flower-1"></div>
+    <div class="flower-2"></div>
+    <div class="flower-3"></div>
+    <h1> Happy Birthdey !</h1>
+</body>
+</html>
